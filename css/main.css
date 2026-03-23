@@ -1,103 +1,120 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e1e3e6;
-    padding: 10px;
-    padding-right: 100px;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1e3e6;
+  padding: 10px;
+  padding-right: 100px;
 }
 
 .logo {
-    width: 150px;
+  width: 150px;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-.nav>a>p {
-    font-family: "head", sans-serif;
-}
-
-@font-face {
-    font-family: "logo";
-    src: url("../fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf") format("truetype");
+.nav > a > p {
+  font-family: "head", sans-serif;
 }
 
 @font-face {
-    font-family: "head";
-    src: url("../fonts/Myriad\ Variable\ Concept.ttf") format("truetype");
+  font-family: "logo";
+  src: url("../fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "text";
-    src: url("../fonts/MyriadPro-Light.otf") format("truetype");
+  font-family: "head";
+  src: url("../fonts/Myriad\ Variable\ Concept.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../fonts/MyriadPro-Light.otf") format("truetype");
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #FACC15;
-    height: 75vh;
-    gap: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #facc15;
+  height: 75vh;
+  gap: 35px;
 }
 
 h1 {
-    font-family: "head", sans-serif;
+  font-family: "head", sans-serif;
 }
 
 p {
-    font-family: "text", sans-serif;
+  font-family: "text", sans-serif;
 }
 
 button {
-    border-style: none;
-    width: 150px;
-    height: 50px;
-    font-family: "text", sans-serif;
-    border-radius: 100px;
-    /* background-color: #e1e3e6; */
-    font-weight: bold;
-
+  border-style: none;
+  width: 150px;
+  height: 50px;
+  font-family: "text", sans-serif;
+  border-radius: 100px;
+  /* background-color: #e1e3e6; */
+  font-weight: bold;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
 }
 
 .nav a {
-    color: #1F2937;
-    transition: color 0.3s ease;
+  color: #1f2937;
+  transition: color 0.3s ease;
 }
 
 .nav a:hover {
-    color: #2563EB;
+  color: #2563eb;
 }
 
 .main-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.text-button > p {
+  color: #e1e3e6;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1e3e6;
+  padding: 10px;
+  padding-right: 100px;
+}
+
+footer > img {
+  width: 150px;
 }
