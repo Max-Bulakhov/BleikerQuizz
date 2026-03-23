@@ -22,6 +22,7 @@ a {
 
 .nav > a > p {
   font-family: "head", sans-serif;
+  font-size: 1.5rem;
 }
 
 @font-face {
@@ -64,7 +65,6 @@ button {
   height: 50px;
   font-family: "text", sans-serif;
   border-radius: 100px;
-  /* background-color: #e1e3e6; */
   font-weight: bold;
 }
 
@@ -93,16 +93,9 @@ button {
   background-color: #1f2937;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 50px;
-}
-
 .text-button > p {
   color: #e1e3e6;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -117,4 +110,41 @@ footer {
 
 footer > img {
   width: 150px;
+}
+
+.hero>p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-inline: 100px;
+}
+
+.text-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-button>button {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 50px;
+    gap: 50px;
+}
+
+.text-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+video {
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
 }
