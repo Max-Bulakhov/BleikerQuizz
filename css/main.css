@@ -1,9 +1,17 @@
+body {
+    margin: 0;
+}
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #e1e3e6;
+    padding: 10px;
+    padding-right: 100px;
+    border-color: black;
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
 }
