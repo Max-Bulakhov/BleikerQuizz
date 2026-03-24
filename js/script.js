@@ -1,12 +1,12 @@
 let questions = [
   {
     question: "Hvilket styresett har Norge?",
-    answers: ["Republikk", "Militærstyre", "Konstitusjonelt monarki", "Diktatur"],
+    answers: ["Republikk","Militærstyre","Konstitusjonelt monarki","Diktatur"],
     correct: 2
   },
   {
     question: "Hvem er Norges konge?",
-    answers: ["Harald V", "Olav V", "Haakon VII", "Frederik X"],
+    answers: ["Harald V","Olav V","Haakon VII","Frederik X"],
     correct: 0
   },
   {
@@ -20,7 +20,7 @@ let questions = [
     correct: 1
   },
   {
-    question: "Hva betyr ordet 'likestilling'?",
+    question: "Hva betyr 'likestilling'?",
     answers: [
       "Alle skal tjene like mye",
       "Kvinner og menn skal ha samme rettigheter og muligheter",
@@ -30,59 +30,56 @@ let questions = [
     correct: 1
   },
   {
-    question: "Hvilket av disse fagene er vanlig på videregående skole i Norge?",
-    answers: ["Norsk", "Astronaut-trening", "Militær-trening", "Dyrepass"],
+    question: "Hvilket fag er vanlig?",
+    answers: ["Norsk","Astronaut-trening","Militær-trening","Dyrepass"],
     correct: 0
   },
   {
-    question: "Hva betyr begrepet 'dugnad' i norsk kultur?",
+    question: "Hva betyr 'dugnad'?",
     answers: [
       "Frivillig arbeid for fellesskapet",
-      "En type mat",
-      "En skoleeksamen",
-      "En sport"
+      "Mat",
+      "Eksamen",
+      "Sport"
     ],
     correct: 0
   },
   {
-    question: "Hva er vanlig arbeidstid i Norge for en fulltidsjobb?",
-    answers: [
-      "Ca. 20 timer per uke",
-      "Ca. 37,5 timer per uke",
-      "Ca. 50 timer per uke",
-      "Ca. 60 timer per uke"
-    ],
+    question: "Arbeidstid i Norge?",
+    answers: ["20 timer","37,5 timer","50 timer","60 timer"],
     correct: 1
   },
   {
-    question: "Hva betyr 'ytringsfrihet'?",
+    question: "Hva er ytringsfrihet?",
     answers: [
-      "Rett til å reise fritt",
-      "Rett til å si sin mening uten frykt for straff",
-      "Rett til gratis skole",
+      "Reise fritt",
+      "Si mening uten straff",
+      "Gratis skole",
       "Rett til arbeid"
     ],
     correct: 1
   },
   {
-    question: "Hva er en kommune i Norge?",
+    question: "Hva er en kommune?",
     answers: [
-      "En type skole",
-      "En lokal administrativ enhet som styrer tjenester i et område",
-      "En organisasjon",
-      "En bedrift"
+      "Skole",
+      "Lokal administrasjon",
+      "Organisasjon",
+      "Bedrift"
     ],
     correct: 1
   },
+
+  // 🎥 ВОПРОС С ВИДЕО
   {
-    question: "Hva er målet med videregående opplæring i Norge?",
+    question: "Hva er riktig?",
+    video: "../video/VideoQuiz.mp4",
     answers: [
-      "Bare å gi karakterer",
-      "Å forberede elever til jobb eller høyere utdanning",
-      "Å lære sport",
-      "Å lære bare norsk språk"
+      "kokken har lamme lår",
+      "ananas ringer i salaten",
+      "det er godt med isbiter"
     ],
-    correct: 1
+    correct: 2
   }
 ];
 
@@ -104,6 +101,17 @@ function showQuestion() {
   let q = questions[current];
 
   document.getElementById("question").innerText = q.question;
+
+  // видео
+  let videoContainer = document.getElementById("video-container");
+  videoContainer.innerHTML = "";
+
+  if (q.video) {
+    let video = document.createElement("video");
+    video.src = q.video;
+    video.controls = true;
+    videoContainer.appendChild(video);
+  }
 
   let answersDiv = document.getElementById("answers");
   answersDiv.innerHTML = "";
@@ -143,14 +151,9 @@ function nextQuestion() {
   if (current < questions.length) {
     showQuestion();
   } else {
-    endQuiz();
+    document.getElementById("quiz-box").classList.add("hidden");
+    document.getElementById("result-box").classList.remove("hidden");
+    document.getElementById("score").innerText =
+      username + ", poeng: " + score;
   }
-}
-
-function endQuiz() {
-  document.getElementById("quiz-box").classList.add("hidden");
-  document.getElementById("result-box").classList.remove("hidden");
-
-  document.getElementById("score").innerText =
-    username + ", poeng: " + score;
 }

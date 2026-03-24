@@ -112,55 +112,55 @@ footer > img {
   width: 150px;
 }
 
-.hero>p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-inline: 100px;
+.hero > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-inline: 100px;
 }
 
 .text-button {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.text-button>button {
-    margin-left: auto;
-    margin-right: 50px;
+.text-button > button {
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    padding: 50px;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 50px;
+  gap: 50px;
 }
 
 .text-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
 }
 
 video {
-    width: 450px;
-    height: 250px;
-    object-fit: cover;
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-block: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 50px;
 }
 
 .download-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .quiz-container {
@@ -170,8 +170,8 @@ video {
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  height: 75vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  height: 100vh;
 }
 
 #answers button {
@@ -179,7 +179,7 @@ video {
   margin: 10px 0;
   padding: 12px;
   border-radius: 10px;
-  background:#2563EB;
+  background: #2563eb;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -218,4 +218,10 @@ input {
   margin-bottom: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
+}
+
+.video-container>video {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
