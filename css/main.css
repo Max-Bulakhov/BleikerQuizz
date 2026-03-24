@@ -225,3 +225,8 @@ input {
   margin-bottom: 15px;
   border-radius: 10px;
 }
+
+.video-content>video {
+    width: 150vh;
+    height: 75vh;
+}

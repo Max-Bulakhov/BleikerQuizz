@@ -70,7 +70,6 @@ let questions = [
     correct: 1
   },
 
-  // 🎥 ВОПРОС С ВИДЕО
   {
     question: "Hva er riktig?",
     video: "../video/VideoQuiz.mp4",
@@ -102,7 +101,6 @@ function showQuestion() {
 
   document.getElementById("question").innerText = q.question;
 
-  // видео
   let videoContainer = document.getElementById("video-container");
   videoContainer.innerHTML = "";
 

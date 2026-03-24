@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz</title>
+    <title>Video</title>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
@@ -25,27 +25,18 @@
       </a>
     </div>
 
-    <div class="quiz-container">
-      <h1>Quiz</h1>
-
-      <div id="start-screen">
-        <input type="text" id="username" placeholder="Skriv navnet ditt" />
-        <button onclick="startQuiz()">Start quiz</button>
+    <div class="content">
+      <div class="text-button">
+        <p></p>
       </div>
-
-      <div id="quiz-box" class="hidden">
-        <h2 id="question"></h2>
-
-        <div id="video-container"><video src="../video/VideoQuiz.mp4"></video></div>
-
-        <div id="answers"></div>
-        <p id="feedback"></p>
-        <button id="nextBtn" onclick="nextQuestion()">Neste</button>
-      </div>
-
-      <div id="result-box" class="hidden">
-        <h2>Resultat</h2>
-        <p id="score"></p>
+      <div class="video-content">
+        <video width="600" controls>
+          <source
+            src="../video/VideoQuiz.mp4"
+            type="video/mp4"
+          />
+          Feil
+        </video>
       </div>
     </div>
 
@@ -54,7 +45,5 @@
       <p>Laget av: <br />Maksym Bulakhov</p>
       <p>Kontakt: <br />maksym.bulakhov@gmail.com</p>
     </footer>
-
-    <script src="../js/script.js"></script>
   </body>
 </html>
