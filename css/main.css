@@ -148,3 +148,74 @@ video {
     height: 250px;
     object-fit: cover;
 }
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 50px;
+}
+
+.download-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.quiz-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  height: 75vh;
+}
+
+#answers button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  background:#2563EB;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#answers button:hover {
+  background: #1e40af;
+}
+
+.correct {
+  background: #16a34a !important;
+}
+
+.wrong {
+  background: #dc2626 !important;
+}
+
+#nextBtn {
+  margin-top: 15px;
+  background: #facc15;
+}
+
+.hidden {
+  display: none;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
