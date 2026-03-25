@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
 }
 
 a {
@@ -186,6 +186,7 @@ video {
 }
 
 #answers button:hover {
+  /* background: #2563eb; */
   background: #1e40af;
 }
 
