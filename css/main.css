@@ -231,3 +231,53 @@ input {
     width: 150vh;
     height: 75vh;
 }
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-block: 10vh;
+    gap: 50px;
+}
+
+.inst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "logo", sans-serif;
+    font-size: 2rem;
+}
+
+.inst>img {
+    width: 45vh;
+}
+
+.face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "logo", sans-serif;
+    font-size: 2rem;
+}
+
+.face>img {
+    width: 45vh;
+}
+
+.tik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "logo", sans-serif;
+    font-size: 2rem;
+}
+
+.tik>img {
+    width: 45vh;
+}
